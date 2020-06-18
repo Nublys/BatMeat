@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  font-size: 300px;
+  text-align: center;
+  bottom: 200px;
+  position: relative;
+}
+
+.blinking {
+  text-align: center;
+}
+
+a{
+  animation:blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #FFFF;    }
+    49%{    color: transparent; }
+    60%{    color: #FFFF; }
+    99%{    color: transparent;  }
+    100%{   color: #FFFF;    }
+}
+
+img {
+  position: absolute;
+  width: 60%;
+  top: 20%;
+  left: 20%;
+}
